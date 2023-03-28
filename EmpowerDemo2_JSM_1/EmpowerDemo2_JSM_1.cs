@@ -68,5 +68,9 @@ public class Script
 	public void Run(Engine engine)
 	{
 		var myDMS = engine.GetDms();
+		var allElements = myDMS.GetElements();
+		foreach ( var element in allElements ) {
+			engine.GenerateInformation(element.Name);
+		}
 	}
 }
