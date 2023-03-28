@@ -54,6 +54,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 using Skyline.DataMiner.Automation;
+using Skyline.DataMiner.Library.Automation;
 
 /// <summary>
 /// DataMiner Script Class.
@@ -66,6 +67,6 @@ public class Script
 	/// <param name="engine">Link with SLAutomation process.</param>
 	public void Run(Engine engine)
 	{
-
+		var myDMS = engine.GetDms();
 	}
 }
